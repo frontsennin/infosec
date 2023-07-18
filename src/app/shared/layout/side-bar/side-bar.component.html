@@ -1,3 +1,21 @@
-<p>
-  side-bar works!
-</p>
+<div class="side-bar">
+  <div class="row">
+    <div class="col center">
+      <strong class="f-28px">GAT</strong>
+      <br>
+      <span class="f-28px">CORE</span>
+    </div>
+  </div>
+  <div class="row" *ngFor="let menuItem of menuList">
+    <div class="col">
+      <div class="menu-item" [ngClass]="{'active-menu': currentRoute == menuItem.path}" (click)="goToPath(menuItem.path)">
+        <fa-icon [icon]="menuItem.icon">
+        </fa-icon>
+        <br>
+        <strong>
+          {{menuItem.label}}
+        </strong>
+      </div>
+    </div>
+  </div>
+</div>

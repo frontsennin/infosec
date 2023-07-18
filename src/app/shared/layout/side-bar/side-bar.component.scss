@@ -1,0 +1,21 @@
+.side-bar {
+  background-color: #303030c5;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12vw;
+}
+
+.menu-item {
+  margin: 8px 0;
+  text-align: center;
+  margin-right: 8px;
+  padding: 8px 0;
+}
+
+.active-menu {
+  background-color: #C36118;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
