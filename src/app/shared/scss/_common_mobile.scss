@@ -1,0 +1,21 @@
+
+@media only screen and (max-width: 800px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .filter-icon-sect {
+      position: absolute;
+      display: block;
+      right: 0px;
+      bottom: 9vh !important;
+      height: 5vh;
+      padding: 8px 8px;
+      background-color: #fff;
+      border: #e31c79 solid 1px;
+    }
+
+    .f-page-title {
+      font-size: 32px;
+    }
+}

@@ -1,0 +1,191 @@
+.default-field {
+  height: 40px;
+  padding: 0 0 16px;
+  border: 0 !important;
+  border-bottom: 1px solid #dddddd !important;
+  font-weight: 300;
+  width: 100%;
+}
+
+.default-field:focus {
+  height: 40px;
+  padding: 0 0 16px;
+  border: 0 !important;
+  border-bottom: 1px solid #525252 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.default-select-field {
+  height: 40px;
+  padding: 10px 16px 0 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid #dddddd !important;
+  font-weight: 300;
+  display: block;
+  width: 100%;
+}
+
+.default-select-field:focus {
+  height: 40px;
+  padding: 10px 16px 0 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid #e31c79 !important;
+  display: block;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.semi-field {
+  height: 40px;
+  padding: 16px;
+  border: none !important;
+  background-color: #f2f3f7;
+  font-weight: 300;
+  display: block;
+  width: 100%;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom: none !important;
+}
+
+.semi-field:focus {
+  height: 40px;
+  padding: 16px;
+  border: 1px solid #dddddd !important;
+  background-color: #f2f3f7;
+  font-weight: 300;
+  display: block;
+  width: 100%;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom: none !important;
+}
+
+.form-group {
+  max-height: 40px;
+  overflow-y: hidden !important;
+  width: 100%;
+  position: relative;
+}
+
+.field-icon-sect {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.form-group > label {
+  bottom: 44px;
+  left: 12px;
+  position: relative;
+  padding: 0px 5px 0px 5px;
+  font-size: 1.1em;
+  transition: 0.2s;
+  pointer-events: none;
+  color: #a1a4b2;
+}
+
+.form-group > .field-icon {
+  bottom: 44px;
+  right: 12px;
+  position: relative;
+  padding: 0px 5px 0px 5px;
+  font-size: 1.1em;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.default-field:focus ~ label {
+  bottom: 50px;
+  font-size: 10px;
+  color: #777777;
+}
+
+.default-field:valid ~ label {
+  bottom: 50px;
+  font-size: 10px;
+  color: #777777;
+}
+.default-field:disabled ~ label {
+  bottom: 50px;
+  font-size: 10px;
+  color: #777777;
+}
+
+.default-field:valid {
+  padding-top: 32px;
+}
+
+.default-field:invalid {
+  border: orangered solid 2px;
+}
+
+.default-select-field:focus ~ label {
+  bottom: 44px;
+  font-size: 10px;
+  color: #777777;
+}
+
+.default-select-field:valid ~ label {
+  bottom: 44px;
+  font-size: 10px;
+  color: #777777;
+}
+.default-select-field:disabled ~ label {
+  bottom: 44px;
+  font-size: 10px;
+  color: #777777;
+}
+
+.default-select-field:valid {
+  padding-top: 32px;
+}
+
+.default-select-field:invalid {
+  border: orangered solid 2px;
+}
+
+.verify-field {
+  padding-top: 16px !important;
+}
+
+.rotateimg180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.options-sect {
+  position: absolute;
+  border: 1px solid #dddddd !important;
+  background-color: #f2f3f7;
+  font-weight: 300;
+  width: 91.5%;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-top: none !important;
+  max-height: 150px;
+  z-index: 99;
+  overflow-y: auto !important;
+}
+
+.option-row {
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.passowd-field {
+  -webkit-text-security: disc;
+  -moz-text-security: circle;
+}
+
+.dark-input {
+  background-color: #292929;
+  color: #fff;
+  border: 0 !important;
+}

@@ -1,0 +1,236 @@
+.full-height {
+  height: 100vh;
+}
+.full-height-per {
+  height: 100%;
+}
+.min-full-height {
+  min-height: 100vh;
+}
+
+.no-scroll-y {
+  overflow-y: hidden !important;
+}
+.no-scroll-x {
+  overflow-x: hidden;
+}
+
+.cover-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.white-bg {
+  background-color: white;
+}
+.gray-bg {
+  background-color: #f5f5f8 !important;
+}
+
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.pointer-section {
+  cursor: pointer;
+}
+
+.limit-x-scroll {
+  overflow-x: auto !important;
+  white-space: nowrap;
+}
+
+.scrollable-col {
+  display: inline-flex;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.divisor-line {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.default-card {
+  background-color: white;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: 5px 5px 15px -3px #000000;
+  box-shadow: 5px 5px 15px -3px #000000;
+}
+
+.shadow {
+  -webkit-box-shadow: -1px 10px 23px -10px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: -1px 10px 23px -10px rgba(0, 0, 0, 0.64);
+  box-shadow: -1px 10px 23px -10px rgba(0, 0, 0, 0.64);
+}
+
+.green-bg {
+  background-color: #71ac47;
+}
+.yellow-bg {
+  background-color: #F3D02E;
+}
+.red-bg {
+  background-color: #b83a14;
+}
+.green-border {
+  border: #71ac47 solid 1px !important;
+}
+.yellow-border {
+  border: #c9c945 solid 1px !important;
+}
+.red-border {
+  border: #b83a14 solid 1px !important;
+}
+
+.default-modal {
+  border-radius: 0 !important;
+  -webkit-box-shadow: -1px 10px 23px -10px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: -1px 10px 23px -10px rgba(0, 0, 0, 0.64);
+  box-shadow: -1px 10px 23px -10px rgba(0, 0, 0, 0.64);
+}
+
+.vertical-scroll {
+  scrollbar-width: auto;
+  scrollbar-color: #F3CF31 #e3e3e3;
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: #e3e3e3;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background-color: #F3CF31;
+  border-radius: 10px;
+  border: 3px none #ffffff;
+}
+
+.horizontal-scroll {
+  scrollbar-width: auto;
+  scrollbar-color: #F3CF31 #e3e3e3;
+  scroll-behavior: smooth !important;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0px;
+  scroll-behavior: smooth !important;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #e3e3e3;
+  scroll-behavior: smooth !important;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #F3CF31;
+  border-radius: 10px;
+  border: 3px none #ffffff;
+  scroll-behavior: smooth !important;
+}
+
+.videos-sect {
+  max-width: 100vw;
+  overflow-x: auto !important;
+}
+
+drag-scroll {
+  width: 100%;
+  height: 27vh !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-move {
+  cursor: grab;
+}
+
+.dark-mode {
+  background-color: #2d3436;
+  color: #dfe6e9;
+  border: #dfe6e9;
+}
+
+.light-mode {
+  background-color: #dfe6e9;
+  color: #2d3436;
+  border: #2d3436;
+}
+
+.box-content {
+  background-color: #fff;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.loading-sect {
+  display: inline-grid;
+  height: 22vh;
+  width: 14vw;
+  position: relative;
+  margin: 0 4px;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .loading-sect {
+    height: 30vh;
+    display: flex;
+    width: 30vw;
+    margin: 0 2px;
+  }
+}
+
+
+
+.icon-button {
+  background-color: #F9D649;
+  padding: 8px;
+  text-align: center;
+  color: #000;
+  border-radius: 16px;
+}
+
+.default-ticket-box {
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin: 8px 0;
+  background-color: #fff;
+  color: #000;
+}
+.green-ticket-box {
+  background-color: #71ac47 !important;
+  color: #fff !important;
+}
+.blue-ticket-box {
+  background-color: #476eac !important;
+  color: #fff !important;
+}
+.red-ticket-box {
+  background-color: #b17784 !important;
+  color: #881010 !important;
+}

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+@import url(./app/shared/scss/_mixins.scss);
+
+body {
+  overflow: hidden;
+  background-image: url(/assets/images/background.png);
+  background-size: 250%;
+  background-repeat: no-repeat;
+}
