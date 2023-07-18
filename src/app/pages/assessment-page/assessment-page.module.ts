@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AssessmentPageComponent } from './assessment-page.component';
+import { AssessmentPageRoutingModule } from './assessment-page-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AssessmentPageRoutingModule
   ],
   declarations: [AssessmentPageComponent]
 })
