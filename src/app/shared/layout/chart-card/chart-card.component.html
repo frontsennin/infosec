@@ -1,0 +1,26 @@
+<div class="chart-card">
+  <div class="row">
+    <div class="col center">
+      <strong class="f-16px f-white">{{ title }}</strong>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col center">
+      <span class="f-white">{{ subTitle }}</span>
+    </div>
+  </div>
+  <div id="lineChart">
+    <apx-chart
+      [series]="chartOptions['series']"
+      [chart]="chartOptions['chart']"
+      [dataLabels]="chartOptions['dataLabels']"
+      [plotOptions]="chartOptions['plotOptions']"
+      [yaxis]="chartOptions['yaxis']"
+      [xaxis]="chartOptions['xaxis']"
+      [title]="chartOptions['title']"
+      [theme]="chartOptions['theme']"
+      [legend]="chartOptions['legend']"
+      [colors]="chartOptions['colors']"
+    ></apx-chart>
+  </div>
+</div>

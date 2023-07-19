@@ -1,0 +1,19 @@
+<div class="list-card">
+  <div class="container">
+    <div class="row">
+      <div class="col center">
+        <strong class="f-16px f-white">{{ title }}</strong>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col center">
+        <span class="f-white">{{ subTitle }}</span>
+      </div>
+    </div>
+    <div class="row " *ngFor="let content of listOfcontent; let last = last">
+      <div class="col line-content" [ngClass]="{'no-border': listOfcontent.length == 1 || last}">
+        {{content}}
+      </div>
+    </div>
+  </div>
+</div>
