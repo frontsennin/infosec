@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { sideBar } from './shared/utils/side-bar';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'infosec';
+  title?:string;
+  pageIcon:any
+
+  constructor(
+    private router: Router
+  ) {
+    router.events.subscribe(() => {
+      const menu = sideBar.find(t => t.path == router.url)
+
+      this.title = menu?.pageTitle
+      this.pageIcon = menu?.icon
+    })
+  }
 }

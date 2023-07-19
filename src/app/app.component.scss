@@ -1,4 +1,12 @@
 .blur-bg {
   height: 100vh;
-  color: #fff;
+}
+
+.page-content {
+  background-color: #000000f2;
+  min-height: 90vh;
+  max-height: 95vh;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+  padding-top: 24px;
 }
