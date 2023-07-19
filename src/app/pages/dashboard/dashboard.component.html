@@ -1,3 +1,25 @@
-<p>
-  dashboard works!
-</p>
+<div class="row">
+  <div class="col" >
+    <div class="row" *ngFor="let card of listOfCards" [ngClass]="{'display-none': card.position != dashboardCardPosition.LEFT}">
+      <div class="col" >
+        <app-chart-card *ngIf="card.cardType == cardType.CHART" [title]="card.title" [subTitle]="card.subTitle" [chartOptions]="card.chartValue"></app-chart-card>
+        <app-list-card *ngIf="card.cardType == cardType.LIST" [title]="card.title" [subTitle]="card.subTitle" [listOfcontent]="card.listOfcontent"></app-list-card>
+      </div>
+    </div>
+  </div>
+  <div class="col-6" >
+    <div class="row">
+      <div class="col-6"  *ngFor="let card of listOfCards" [ngClass]="{'display-none': card.position != dashboardCardPosition.CENTER}">
+        <app-chart-card *ngIf="card.cardType == cardType.CHART" [title]="card.title" [subTitle]="card.subTitle" [chartOptions]="card.chartValue"></app-chart-card>
+      </div>
+    </div>
+  </div>
+  <div class="col" >
+    <div class="row" *ngFor="let card of listOfCards" [ngClass]="{'display-none': card.position != dashboardCardPosition.RIGHT}">
+      <div class="col" >
+        <app-chart-card *ngIf="card.cardType == cardType.CHART" [title]="card.title" [subTitle]="card.subTitle" [chartOptions]="card.chartValue"></app-chart-card>
+        <app-list-card *ngIf="card.cardType == cardType.LIST" [title]="card.title" [subTitle]="card.subTitle" [listOfcontent]="card.listOfcontent"></app-list-card>
+      </div>
+    </div>
+  </div>
+</div>
