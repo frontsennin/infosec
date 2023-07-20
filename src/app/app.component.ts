@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { sideBar } from './shared/utils/side-bar';
+import { listOfPages } from './shared/routes/pages';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,12 @@ export class AppComponent {
     private router: Router
   ) {
     router.events.subscribe(() => {
-      const menu = sideBar.find(t => t.path == router.url)
+      let menu
+      if(router.url.includes('detail')) {
+        menu = listOfPages.find(t => router.url.includes(t.path) && t.path.includes('detail'))
+      } else {
+        menu = listOfPages.find(t => router.url == t.path)
+      }
 
       this.title = menu?.pageTitle
       this.pageIcon = menu?.icon
