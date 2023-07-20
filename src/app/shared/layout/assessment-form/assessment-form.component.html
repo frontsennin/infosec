@@ -1,3 +1,87 @@
-<p>
-  assessment-form works!
-</p>
+<div class="assessment-form">
+  <div class="row">
+    <div class="col">
+      <span class="f-18px">
+        Preencha os dados para criar uma nova avaliação.
+      </span>
+    </div>
+  </div>
+  <div class="row pt-24px">
+    <div class="col-4">
+      <label for="name-field" class="default-label">Titulo</label>
+      <input
+        id="name-field"
+        type="text"
+        class="default-input"
+        placeholder="Escreva o titulo da sua avaliação"
+        [(ngModel)]="assessmentForm.title"
+      />
+    </div>
+    <div class="col-4">
+      <label for="complexity-field" class="default-label">Complexidade</label>
+      <select
+        name="complexity-field-name"
+        id="complexity-field"
+        class="default-input"
+        [(ngModel)]="assessmentForm.complexity"
+      >
+        <option
+          *ngFor="let complecity of listOfComplexity"
+          [value]="complecity"
+        >
+          {{ complecity }}
+        </option>
+      </select>
+    </div>
+    <div class="col-4">
+      <label for="limit-field" class="default-label">Data Limite</label>
+      <input
+        id="limit-field"
+        type="text"
+        class="default-input"
+        placeholder="ex: DD/MM/YYYY"
+        mask="00/00/0000"
+        [dropSpecialCharacters]="false"
+        [(ngModel)]="assessmentForm.limitDate"
+      />
+    </div>
+    <div class="col-6 pt-16px">
+      <span class="f-16px">Templates</span>
+      <div class="list-of-items">
+        <div
+          class="row item-row pt-4px pb-4px"
+          *ngFor="let template of templates"
+          (click)="template.value.selected = !template.value.selected"
+          [ngClass]="{ 'selected-row': template.value.selected }"
+        >
+          <div class="col">
+            {{ template.label }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 pt-16px">
+      <span class="f-16px">Respondentes</span>
+      <div class="list-of-items">
+        <div
+          class="row item-row pt-4px pb-4px"
+          *ngFor="let people of peoples"
+          (click)="people.selected = !people.selected"
+          [ngClass]="{ 'selected-row': people.selected }"
+        >
+          <div class="col">
+            {{ people.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row pt-32px pb-24px justify-content-end">
+    <div class="col-2">
+      <button class="btn btn-secondary w-100" (click)="backToLastPage()" >VOLTAR</button>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-default-orange w-100" (click)="save()" >SALVAR</button>
+    </div>
+  </div>
+</div>
