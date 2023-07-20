@@ -1,3 +1,19 @@
-<p>
-  table works!
-</p>
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th *ngFor="let head of tableConfig.header" [class]="head.classes">{{head.label}}</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="tableConfig.body.length > 0">
+    <tr *ngFor="let body  of tableConfig.body" class="body-row" (click)="emitValue(body)">
+      <td *ngFor="let head of tableConfig.header" [class]="head.classes">{{body[head.value]}}</td>
+    </tr>
+  </tbody>
+  <tbody *ngIf="!tableConfig.body || tableConfig.body.length == 0">
+    <div class="row center">
+      <div class="col">
+        não há dados para carregar
+      </div>
+    </div>
+  </tbody>
+</table>

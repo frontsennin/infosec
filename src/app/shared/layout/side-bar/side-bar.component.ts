@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { sideBar } from '../../utils/side-bar';
 import { Router } from '@angular/router';
+import { listOfPages } from '../../routes/pages';
 
 @Component({
   selector: 'app-side-bar',
@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class SideBarComponent implements OnInit {
 
-  menuList = sideBar
-  currentRoute?:string
+  menuList = listOfPages
+  currentRoute!:string
 
   constructor(
     private router: Router
