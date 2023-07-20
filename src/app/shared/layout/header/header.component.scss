@@ -1,10 +1,3 @@
-.header {
-  background-color: #303030c5;
-  height: 12vh;
-  position: relative;
-  color: #fff;
-}
-
 .float-sector {
   position: absolute;
   display: flex;
@@ -13,13 +6,7 @@
   width: auto;
 }
 
-.top-button {
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border: solid 1px #fff;
-  padding: 16px;
-  cursor: pointer;
-}
+
 .orange-top-button {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;

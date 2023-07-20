@@ -27,6 +27,9 @@
         <div class="col-4">
           <fa-icon [icon]="faGear"></fa-icon>
         </div>
+        <div class="col-4">
+          <fa-icon [icon]="isLight ? faMoon : faSun" (click)="onToggle()"></fa-icon>
+        </div>
       </div>
     </div>
   </div>
