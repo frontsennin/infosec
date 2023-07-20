@@ -1,28 +1,30 @@
-<div class="row align-items-center pt-32px">
-  <div class="col-2 center">
-    <span class="f-18px ">Status:</span>
-  </div>
-  <div class="col">
-    <div class="status-bullet">
-      <div class="row position-relative">
-        <div class="col" *ngFor="let item of listOfStatus">
-          <div class="row justify-content-center">
-            <div class="col-4 center">
-              <div
-                class="bullet"
-                [ngClass]="{
-                  'concluded-bullet': item.concluded && item.status,
-                  'active-bullet': item.status && !item.concluded
-                }"
-              >
-              <fa-icon *ngIf="item.concluded && item.status" [icon]="faCheck"></fa-icon>
-              <fa-icon *ngIf="item.status && !item.concluded" [icon]="faClock"></fa-icon>
+<div class="progress-component">
+  <div class="row align-items-center pt-32px">
+    <div class="col-2 center">
+      <span class="f-18px ">Status:</span>
+    </div>
+    <div class="col">
+      <div class="status-bullet">
+        <div class="row position-relative">
+          <div class="col" *ngFor="let item of listOfStatus">
+            <div class="row justify-content-center">
+              <div class="col-4 center">
+                <div
+                  class="bullet"
+                  [ngClass]="{
+                    'concluded-bullet': item.concluded && item.status,
+                    'active-bullet': item.status && !item.concluded
+                  }"
+                >
+                <fa-icon *ngIf="item.concluded && item.status" [icon]="faCheck"></fa-icon>
+                <fa-icon *ngIf="item.status && !item.concluded" [icon]="faClock"></fa-icon>
+              </div>
+              </div>
             </div>
-            </div>
-          </div>
-          <div class="row center">
-            <div class="col">
-              {{ item.label }}
+            <div class="row center">
+              <div class="col">
+                {{ item.label }}
+              </div>
             </div>
           </div>
         </div>
