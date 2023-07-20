@@ -1,0 +1,22 @@
+.bullet {
+  height: 32px;
+  width: 32px;
+  border: solid 3px #6f6f6f;
+  background-color: #6f6f6f;
+  border-radius: 100%;
+  z-index: 99;
+}
+
+.concluded-bullet {
+  background-color: #8BEBF8;
+  border: solid 3px #8BEBF8;
+}
+.active-bullet {
+  background-color: #43DE97;
+  border: solid 3px #43DE97;
+}
+
+.position-relative {
+  position: relative !important;
+}
+

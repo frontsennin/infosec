@@ -7,12 +7,14 @@ import { TableModule } from 'src/app/shared/layout/table/table.module';
 import { AssessmentInfoComponent } from './components/assessment-info/assessment-info.component';
 import { AnswersTableComponent } from './components/answers-table/answers-table.component';
 import { TemplatesTableComponent } from './components/templates-table/templates-table.component';
+import { ProgressComponent } from './components/progress/progress.component';
 
 const components = [
   AssessmentDetailPageComponent,
   AssessmentInfoComponent,
   AnswersTableComponent,
-  TemplatesTableComponent
+  TemplatesTableComponent,
+  ProgressComponent
 ]
 
 @NgModule({
