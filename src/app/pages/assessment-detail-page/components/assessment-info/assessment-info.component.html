@@ -1,0 +1,49 @@
+<div class="row align-items-center pt-24px">
+  <div class="col-3">
+    <div class="detail-box center">
+      <div class="row">
+        <div class="col">
+          <fa-icon size="3x" [icon]="faBuilding"></fa-icon>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <strong class="f-20px">Empresa XPTO</strong>
+          <br>
+          <span>Fornecedor</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="detail-box">
+      <div class="row">
+        <div class="col-4 pt-16px">
+          <strong class="f-24px">
+            {{assessment.title}}
+          </strong>
+        </div>
+        <div class="col-4 pt-16px">
+          <strong class="f-18px">Criado Por:</strong>
+          <span> {{assessment.createdBy}}</span>
+        </div>
+        <div class="col-4 pt-16px">
+          <strong class="f-18px">Criado em:</strong>
+          <span> {{assessment.createdDate}}</span>
+        </div>
+        <div class="col-4 pt-16px">
+          <strong class="f-18px">ID:</strong>
+          <span> {{assessment.id}}</span>
+        </div>
+        <div class="col-4 pt-16px">
+          <strong class="f-18px">Severidade:</strong>
+          <span> {{assessment.complexity}}</span>
+        </div>
+        <div class="col-4 pt-16px">
+          <strong class="f-18px">Prazo:</strong>
+          <span> {{assessment.limitDate}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col">
+    <span
+      class="f-orange-link"
+      [routerLink]="['/assessment']"
+      routerLinkActive="router-link-active"
+      >Avaliações ->
+    </span>
+    <strong class="f-white">
+      Detalhe da Avaliação id: {{ assessment.id }}</strong
+    >
+  </div>
+</div>
+<div class="detail-page">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+  <app-assessment-info [assessment]="assessment"></app-assessment-info>
+
+  <div class="row pt-16px">
+    <div class="col center">
+      <div class="topic-text" *ngFor="let topic of listOfTopics">
+        <span class="f-16px" [ngClass]="{
+          'disabled-text': !topic.status,
+          'f-orange-link': topic.status,
+          'selected-topic': topic.selected
+        }"
+        (click)="changeSelectedId(topic)">
+          {{topic.title}}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+
+      <app-templates-table *ngIf="selectedId == 1" [tableBody]="assessment.templates"></app-templates-table>
+      <app-answers-table *ngIf="selectedId == 2" [tableBody]="assessment.answers"></app-answers-table>
+
+    </div>
+  </div>
+</div>
